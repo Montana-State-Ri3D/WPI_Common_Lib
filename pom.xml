@@ -2,14 +2,15 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.example</groupId>
-  <artifactId>WPI_Common_Lib</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <groupId>com.github</groupId>
+  <artifactId>commonlib</artifactId>
+  <version>0.0.3</version>
   <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.10.1</version>
         <configuration>
           <source>16</source>
           <target>16</target>
@@ -19,7 +20,7 @@
   </build>
   <packaging>jar</packaging>
 
-  <name>WPI_Common_Lib</name>
+  <name>commonlib</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -34,4 +35,12 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Montana-State-Ri3D Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/Montana-State-Ri3D/commonlib</url>
+    </repository>
+  </distributionManagement>
 </project>
